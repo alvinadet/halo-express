@@ -1,0 +1,22 @@
+{
+  "name": "halo-express",
+  "version": "0.0.1",
+  "description": "this project tutorial from Node.js book \"Halo Web Server with Express\".",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadFariMadyan/halo-express.git"
+  },
+  "author": "M. Fari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuhammadFariMadyan/halo-express/issues"
+  },
+  "homepage": "https://github.com/MuhammadFariMadyan/halo-express#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
