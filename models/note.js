@@ -1,4 +1,4 @@
-const NOTES = [
+let NOTES = [
   {
     id: 1,
     title: "How to learn Node.js",
@@ -17,6 +17,47 @@ function getAll() {
   return NOTES;
 }
 
+function add(data) {
+  const newData = data;
+  newData["id"] = NOTES.length - 1;
+  NOTES.push(newData);
+  return NOTES;
+}
+
+function get(id) {
+  const notes = NOTES.filter(function(note) {
+    return note.id === parseInt(id);
+  });
+  return notes[0];
+}
+
+function update(id, data) {
+  // delete current note
+  const newNotes = NOTES.filter(function(note) {
+    return note.id !== parseInt(id);
+  });
+  NOTES = newNotes;
+
+  // add new note
+  const newNote = data;
+  newNote.id = parseInt(id);
+  newNote.created_at = new Date();
+  NOTES.push(newNote);
+  return NOTES[id];
+}
+
+function remove(id) {
+  NOTES = NOTES.filter(function(note) {
+    return note.id !== parseInt(id);
+  });
+
+  return NOTES;
+}
+
 module.exports = {
-  getAll: getAll
+  getAll: getAll,
+  add: add,
+  get: get,
+  update: update,
+  remove: remove
 };
