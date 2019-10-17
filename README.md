@@ -42,3 +42,7 @@
   - fix bug ADD saat menambahkan data
 
   - update readme
+
+  - version 0.0.3
+
+  - change methode update saat mengubah data
