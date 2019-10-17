@@ -16,3 +16,13 @@
    <img src="screenshots/create-a-note.png" >
 4. Halaman untuk edit catatan.
    <img src="screenshots/edit-a-note.png" >
+
+## Cara Menjalankan Project Hello Express
+
+1. Install packages dengan menjalanka yarn install.
+
+2. Kemudian jalankan yarn start jika sudah stabil.
+
+3. yarn dev untuk mode development
+
+4. Buka browser. kemudian masuk ke localhost:3000
