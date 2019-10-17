@@ -26,3 +26,19 @@
 3. yarn dev untuk mode development
 
 4. Buka browser. kemudian masuk ke localhost:3000
+
+## CHANGELOG
+
+- version 0.0.1
+
+  - create new project
+
+  - menambahkan feature CRUD di dalam express
+
+  - membuat layout notes
+
+- version 0.0.2
+
+  - fix bug ADD saat menambahkan data
+
+  - update readme
