@@ -31,10 +31,11 @@ function add(data) {
 }
 
 function get(id) {
-  const notes = NOTES.filter(function(note) {
+  const notes = NOTES.find(function(note) {
     return note.id === parseInt(id);
   });
-  return notes[0];
+
+  return notes;
 }
 
 function update(id, data) {
