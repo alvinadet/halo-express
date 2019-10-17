@@ -18,9 +18,15 @@ function getAll() {
 }
 
 function add(data) {
-  const newData = data;
-  newData["id"] = NOTES.length - 1;
-  NOTES.push(newData);
+  const noteId = NOTES[NOTES.length - 1].id;
+  const newNote = {
+    id: noteId + 1,
+    title: data.title,
+    body: data.body,
+    created_at: new Date()
+  };
+  NOTES.push(newNote);
+
   return NOTES;
 }
 
